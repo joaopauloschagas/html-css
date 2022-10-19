@@ -13,6 +13,7 @@
         table {
             width: 500px;
             border-collapse: collapse;
+            position: relative;
         }
 
         td, th {
@@ -20,10 +21,32 @@
             padding: 10px;
         }
 
+        caption {
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightgray;
+        }
+
         thead, tfoot {
-            background-color: gray;
+            background-color: #383838;
             color: white;
         }
+
+        thead > tr > th {
+            position: sticky;
+            top: -1px;
+            background-color: #383838;
+        }
+
+        tbody > tr:nth-child(odd) {  /*  EFEITO ZEBRADO2n-1 */
+            background-color: white;
+        }
+
+        tbody > tr:nth-child(even) {  /* EFEITO ZEBRADO 2n */
+            background-color: lightgray;
+        }
+
 
         td.num {
             text-align: right;
@@ -32,6 +55,7 @@
      <!--
         ANATOMIA PARA TABELAS GRANDES
         TABLE
+        CAPTION
         THEAD
         TR, TD, TH
         TBODY
@@ -44,16 +68,20 @@
     <h1>Uso de Tabelas Grandes</h1>
 
     <table>
+        <caption>População das Unidades Federativas</caption>
+
         <thead>
             <tr>
-                <th>Estado</th>
-                <th>População</th>
+                <th scope="col">Estado</th>
+                <th scope="col" style="width: 50px;">População</th>
             </tr>
         </thead> 
 
         <tfoot>
-            <th>Total de habitantes</th>
-            <td class="num"><strong>210 147 125</strong></td>
+            <tr>
+                <th scope="row">Total de habitantes</th>
+                <td class="num"><strong>210 147 125</strong></td>
+            </tr>
         </tfoot>
 
         <tbody>
@@ -146,5 +174,24 @@
 
         </tbody>
     </table>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius repellendus reiciendis necessitatibus mollitia unde officiis rerum voluptas excepturi reprehenderit soluta ea tenetur, provident dicta eveniet sit nemo omnis pariatur officia.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate asperiores maxime voluptas excepturi modi doloremque, voluptatum quo nostrum cumque inventore iure consectetur amet illum repellendus architecto, aliquam, laborum esse quod.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate asperiores maxime voluptas excepturi modi doloremque, voluptatum quo nostrum cumque inventore iure consectetur amet illum repellendus architecto, aliquam, laborum esse quod.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate asperiores maxime voluptas excepturi modi doloremque, voluptatum quo nostrum cumque inventore iure consectetur amet illum repellendus architecto, aliquam, laborum esse quod.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate asperiores maxime voluptas excepturi modi doloremque, voluptatum quo nostrum cumque inventore iure consectetur amet illum repellendus architecto, aliquam, laborum esse quod.</p><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate asperiores maxime voluptas excepturi modi doloremque, voluptatum quo nostrum cumque inventore iure consectetur amet illum repellendus architecto, aliquam, laborum esse quod.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate asperiores maxime voluptas excepturi modi doloremque, voluptatum quo nostrum cumque inventore iure consectetur amet illum repellendus architecto, aliquam, laborum esse quod.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate asperiores maxime voluptas excepturi modi doloremque, voluptatum quo nostrum cumque inventore iure consectetur amet illum repellendus architecto, aliquam, laborum esse quod.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate asperiores maxime voluptas excepturi modi doloremque, voluptatum quo nostrum cumque inventore iure consectetur amet illum repellendus architecto, aliquam, laborum esse quod.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate asperiores maxime voluptas excepturi modi doloremque, voluptatum quo nostrum cumque inventore iure consectetur amet illum repellendus architecto, aliquam, laborum esse quod.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate asperiores maxime voluptas excepturi modi doloremque, voluptatum quo nostrum cumque inventore iure consectetur amet illum repellendus architecto, aliquam, laborum esse quod.</p><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate asperiores maxime voluptas excepturi modi doloremque, voluptatum quo nostrum cumque inventore iure consectetur amet illum repellendus architecto, aliquam, laborum esse quod.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate asperiores maxime voluptas excepturi modi doloremque, voluptatum quo nostrum cumque inventore iure consectetur amet illum repellendus architecto, aliquam, laborum esse quod.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate asperiores maxime voluptas excepturi modi doloremque, voluptatum quo nostrum cumque inventore iure consectetur amet illum repellendus architecto, aliquam, laborum esse quod.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate asperiores maxime voluptas excepturi modi doloremque, voluptatum quo nostrum cumque inventore iure consectetur amet illum repellendus architecto, aliquam, laborum esse quod.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate asperiores maxime voluptas excepturi modi doloremque, voluptatum quo nostrum cumque inventore iure consectetur amet illum repellendus architecto, aliquam, laborum esse quod.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate asperiores maxime voluptas excepturi modi doloremque, voluptatum quo nostrum cumque inventore iure consectetur amet illum repellendus architecto, aliquam, laborum esse quod.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate asperiores maxime voluptas excepturi modi doloremque, voluptatum quo nostrum cumque inventore iure consectetur amet illum repellendus architecto, aliquam, laborum esse quod.</p>
+    
+
+    
 </body>
 </html>
